@@ -156,15 +156,18 @@ ul { list-style: none; }
 }
 .stat-box strong {
   display: block;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 800;
   color: var(--text-primary);
   margin-bottom: 12px;
-  line-height: 1.3;
+  line-height: 1.2;
   word-break: keep-all;
 }
 .stat-box strong .highlight {
   color: var(--daangn-orange);
+  font-size: 38px;
+  display: inline-block;
+  margin: 0 2px;
 }
 .stat-box span {
   display: block;
