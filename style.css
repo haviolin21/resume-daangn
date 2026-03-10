@@ -226,6 +226,10 @@ ul { list-style: none; }
   border-radius: 16px;
   padding: 40px;
   transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer; /* 클릭 가능하다는 표시 */
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -233,6 +237,7 @@ ul { list-style: none; }
 }
 .card-tag {
   display: inline-block;
+  align-self: flex-start;
   padding: 6px 12px;
   background-color: #FFF2EB;
   color: var(--daangn-orange);
@@ -250,6 +255,7 @@ ul { list-style: none; }
   font-size: 16px;
   color: var(--text-secondary);
   margin-bottom: 24px;
+  flex-grow: 1; /* 남은 공간 채우기 */
 }
 .card-highlight {
   font-weight: 700;
@@ -260,21 +266,129 @@ ul { list-style: none; }
   border-radius: 8px;
   margin-bottom: 24px;
 }
-.card ul {
-  padding-left: 20px;
-}
-.card li {
+.card-more {
   font-size: 15px;
-  color: var(--text-secondary);
-  margin-bottom: 8px;
-  position: relative;
+  font-weight: 700;
+  color: var(--daangn-orange);
+  text-align: right;
+  transition: opacity 0.2s;
 }
-.card li::before {
-  content: "·";
+.card:hover .card-more {
+  opacity: 0.8;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.modal-content {
+  background-color: var(--bg-white);
+  margin: auto;
+  padding: 48px;
+  border-radius: 24px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.1);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+.modal-close {
   position: absolute;
-  left: -16px;
+  top: 24px;
+  right: 32px;
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: var(--text-primary);
+}
+
+.modal-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+.modal-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #FFF2EB;
+  color: var(--daangn-orange);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+.modal-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.modal-date {
+  font-size: 15px;
   color: var(--text-tertiary);
 }
+
+.modal-section {
+  margin-bottom: 40px;
+}
+.modal-section:last-child {
+  margin-bottom: 0;
+}
+.modal-section h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+.modal-section p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.modal-section ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.modal-section li {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.modal-section li strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
 
 /* Two Col (Capability & Edu) */
 .two-col {
@@ -379,4 +493,5 @@ ul { list-style: none; }
   .footer-top { flex-direction: column; gap: 32px; }
   .footer-contact { text-align: left; }
   .nav { display: none; }
+  .modal-content { padding: 32px 24px; }
 }
