@@ -225,15 +225,15 @@ ul { list-style: none; }
   border: 1px solid var(--border-color);
   border-radius: 16px;
   padding: 40px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer; /* 클릭 가능하다는 표시 */
   position: relative;
   display: flex;
   flex-direction: column;
 }
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.08);
 }
 .card-tag {
   display: inline-block;
