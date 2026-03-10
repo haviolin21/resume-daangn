@@ -7,432 +7,255 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <div class="brand">
-        <div class="brand-mark">🥕</div>
-        <div>
-          하윤택
-          <small>DANGGEUN-INSPIRED OPERATIONS PORTFOLIO</small>
-        </div>
-      </div>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🥕</span>
+        <span class="logo-text">하윤택 포트폴리오</span>
+      </a>
       <nav class="nav">
         <a href="#intro">소개</a>
         <a href="#experience">경력</a>
         <a href="#projects">프로젝트</a>
         <a href="#capability">역량</a>
-        <a href="#education">학력·교육</a>
-        <a href="#contact">연락</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero fade-up">
+      <div class="wrap hero-wrap">
+        <h1 class="hero-title">동네의 가치를 믿듯,<br>단단하고 신뢰받는 운영을 만듭니다.</h1>
+        <p class="hero-desc">안녕하세요. 데이터 기반 문제 해결과 운영 자동화로<br>플랫폼의 성장을 돕는 오퍼레이션 매니저 하윤택입니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:yuntaek.ha@gmail.com">이메일 보내기</a>
+          <a class="btn btn-secondary" href="#projects">프로젝트 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduce Section (Gray BG) -->
+    <section class="section section-gray fade-up" id="intro">
       <div class="wrap">
-        <div class="hero-shell">
-          <div class="hero-grid">
-            <div>
-              <div class="eyebrow">LOCAL COMMUNITY · TRUST · OPERATIONS</div>
-              <h1>신뢰가 쌓이는 운영 구조를<br />데이터로 만드는 사람</h1>
-              <p class="headline">하윤택 | Operations Manager · Community · Service Improvement</p>
-              <p class="hero-copy">
-                커뮤니티 서비스는 기능만 잘 만든다고 오래 사랑받지 않는다고 생각합니다.
-                일상 속에서 자연스럽게 쓰이고, 사용자들이 서로 편안하게 연결되며, 문제가 생겼을 때도 신뢰를 잃지 않는 운영 구조가 함께 있어야 합니다.
-                저는 중고나라와 김캐디, 위메프, 쿠팡에서 데이터 분석, 운영 정책, 자동화, 프로세스 개선을 통해 서비스가 더 안정적이고 믿을 수 있게 작동하도록 만드는 일을 해왔습니다.
-              </p>
-
-              <div class="metric-grid">
-                <div class="metric-card">
-                  <strong class="count-up" data-target="2.4">💳 2.4x</strong>
-                  <span>중고나라 페이 결제액 성장</span>
-                </div>
-                <div class="metric-card">
-                  <strong class="count-up" data-target="1.6">📈 1.6x</strong>
-                  <span>카페–앱 연동 회원 증가</span>
-                </div>
-                <div class="metric-card">
-                  <strong class="count-static">🛠 약 2억</strong>
-                  <span>운영 자동화 비용 절감</span>
-                </div>
-              </div>
-
-              <div class="hero-tags">
-                <span class="tag">운영 구조 개선</span>
-                <span class="tag">데이터 기반 문제 해결</span>
-                <span class="tag">C2C 플랫폼 운영</span>
-                <span class="tag">커뮤니티 신뢰</span>
-                <span class="tag">자동화 · SOP</span>
-              </div>
-
-              <div class="cta-row">
-                <a class="btn btn-primary" href="mailto:yuntaek.ha @gmail.com?subject=%ED%95%98%EC%9C%A4%ED%83%9D%EB%8B%98%20%ED%94%84%EB%A1%9C%ED%95%84%20%EB%AC%B8%EC%9D%98">이메일 보내기</a>
-                <a class="btn btn-secondary" href="#projects">주요 프로젝트 보기</a>
-              </div>
-            </div>
-
-            <div class="hero-side" id="contact">
-              <div class="profile-card fade-up delay-1">
-                <div class="profile-meta">
-                  <div class="meta-item">
-                    <strong>Name</strong>
-                    <span>하윤택</span>
-                  </div>
-                  <div class="meta-item">
-                    <strong>Email</strong>
-                    <a href="mailto:yuntaek.ha @gmail.com">yuntaek.ha@gmail.com</a>
-                  </div>
-                  <div class="meta-item">
-                    <strong>Phone</strong>
-                    <span>010-4795-3330</span>
-                  </div>
-                  <div class="meta-item">
-                    <strong>Focus</strong>
-                    <span>Community Operations · Trust · Automation</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="side-card fade-up delay-2">
-                <h2 class="side-title">당근 느낌으로 담은 핵심 포인트</h2>
-                <ul class="side-list">
-                  <li>사용자 경험을 해치지 않으면서 운영 구조를 개선하는 문제 해결 방식</li>
-                  <li>데이터 분석을 바탕으로 병목과 리스크를 구조적으로 찾는 역량</li>
-                  <li>운영, 개발, 기획, 영업 조직과 함께 실행까지 연결하는 협업 경험</li>
-                  <li>신뢰와 안전이 중요한 C2C 플랫폼 운영 경험</li>
-                </ul>
-              </div>
-            </div>
+        <h2 class="section-title">운영의 기준을 높입니다</h2>
+        <div class="intro-content">
+          <p>커뮤니티 서비스는 기능만 잘 만든다고 오래 사랑받지 않습니다. 일상 속에서 자연스럽게 쓰이고, 사용자들이 서로 편안하게 연결되며, 문제가 생겼을 때도 신뢰를 잃지 않는 단단한 운영 구조가 필수적입니다.</p>
+          <p>저는 중고나라, 김캐디, 위메프, 쿠팡에서 데이터 분석, 운영 정책, 자동화, 프로세스 개선을 통해 서비스가 더 안정적이고 믿을 수 있게 작동하도록 만드는 일을 해왔습니다.</p>
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat-box">
+            <strong class="count-up" data-target="2.4">2.4x</strong>
+            <span>중고나라 페이 결제액 성장</span>
+          </div>
+          <div class="stat-box">
+            <strong class="count-up" data-target="1.6">1.6x</strong>
+            <span>카페-앱 연동 회원 증가</span>
+          </div>
+          <div class="stat-box">
+            <strong>약 2억</strong>
+            <span>운영 자동화 연간 비용 절감</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section fade-up" id="intro">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="section-kicker">Introduction</span>
-            <h2 class="section-title">소개</h2>
-            <p class="section-sub">문제를 발견하고 빠르게 실험하며, 신뢰가 쌓이는 운영 구조를 만드는 사람으로 일해왔습니다.</p>
-          </div>
-        </div>
-
-        <div class="section-card">
-          <div class="intro-grid">
-            <div class="intro-copy">
-              <p>
-                저는 서비스 운영에서 발생하는 문제를 데이터로 분석하고, 운영 구조와 프로세스를 개선해 서비스 품질과 효율을 높여 온 운영 담당자입니다.
-                운영을 단순히 주어진 업무를 처리하는 영역이 아니라 사용자 경험을 개선하고 서비스의 기준을 높이는 과정이라고 생각하며 일해왔습니다.
-              </p>
-              <p>
-                SQL과 데이터 시각화 도구를 활용해 운영 지표와 사용자 행동을 분석하고, 퍼널 분석을 통해 서비스 병목을 발견하고 개선해 왔습니다.
-                이후 가설을 세우고 실험을 통해 실제 서비스 개선으로 이어지는 실행을 반복해 왔습니다.
-              </p>
-              <p>
-                위메프, 쿠팡, 중고나라 등 다양한 플랫폼에서 AMD, MD, 운영 매니저 역할을 경험하며 서비스 운영의 현장과 시스템 구조를 함께 이해하게 되었습니다.
-                이를 바탕으로 개별 이슈 대응에 그치지 않고 서비스 전체 흐름 속에서 문제를 바라보고 운영 구조를 개선하는 방식으로 문제를 해결해 왔습니다.
-              </p>
-            </div>
-
-            <div class="value-list">
-              <div class="value-item fade-up delay-1">
-                <strong>문제 정의부터 실행까지</strong>
-                <span>병목을 발견하는 데서 끝나지 않고, 실험과 협업을 통해 실제 운영 구조 개선으로 연결해 왔습니다.</span>
-              </div>
-              <div class="value-item fade-up delay-2">
-                <strong>사용자 신뢰 중심</strong>
-                <span>특히 C2C 환경에서 신뢰와 안전이 서비스 성장의 핵심이라는 점을 직접 경험했습니다.</span>
-              </div>
-              <div class="value-item fade-up delay-3">
-                <strong>운영 자동화 경험</strong>
-                <span>반복 업무와 운영 리스크를 줄이고 더 중요한 문제 해결에 집중할 수 있는 구조를 만들었습니다.</span>
-              </div>
-              <div class="value-item fade-up delay-3">
-                <strong>데이터 기반 의사결정</strong>
-                <span>SQL, 대시보드, 퍼널 분석, 세그먼트 분석을 통해 개선 방향을 정량적으로 도출해 왔습니다.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Experience Section (White BG) -->
     <section class="section fade-up" id="experience">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="section-kicker">Experience</span>
-            <h2 class="section-title">경력</h2>
-            <p class="section-sub">운영, 데이터, 정책, 자동화를 연결하며 플랫폼 성과를 개선해 온 경험입니다.</p>
-          </div>
-        </div>
-
+        <h2 class="section-title">경력</h2>
         <div class="timeline">
-          <article class="timeline-item fade-up">
-            <div class="timeline-top">
-              <div>
-                <h3>김캐디</h3>
-                <div class="role">리드 · 운영팀</div>
-              </div>
-              <div class="date">2025.06 – 2026.02</div>
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <h3>김캐디</h3>
+              <span class="timeline-role">리드 · 운영팀</span>
+              <span class="timeline-date">2025.06 – 2026.02</span>
             </div>
-            <p class="timeline-desc">운영 데이터와 VOC를 기반으로 운영 정책과 구조를 개선하고, 자동화와 대시보드 구축을 통해 운영 효율을 높였습니다.</p>
-            <ul class="bullet-list">
-              <li>운영 데이터 및 VOC 분석 기반 운영 정책·개선 과제 도출</li>
-              <li>운영팀–개발팀 협업을 통한 프로세스 및 시스템 개선 기획</li>
-              <li>IVR 예약 자동화 도입으로 연간 약 2억 원 비용 절감</li>
-              <li>콜 CS 응대율 10% → 80% 수준 개선</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item fade-up delay-1">
-            <div class="timeline-top">
-              <div>
-                <h3>중고나라</h3>
-                <div class="role">매니저 · 결제제휴사업팀</div>
-              </div>
-              <div class="date">2022.03 – 2024.04</div>
+            <div class="timeline-content">
+              <p>운영 데이터와 VOC를 기반으로 운영 정책과 구조를 개선하고, 자동화와 대시보드 구축을 통해 운영 효율을 높였습니다.</p>
+              <ul>
+                <li>운영 데이터 및 VOC 분석 기반 운영 정책·개선 과제 도출</li>
+                <li>운영팀–개발팀 협업을 통한 프로세스 및 시스템 개선 기획</li>
+                <li>IVR 예약 자동화 도입으로 연간 약 2억 원 비용 절감</li>
+                <li>콜 CS 응대율 10% → 80% 수준 개선</li>
+              </ul>
             </div>
-            <p class="timeline-desc">결제 서비스 운영과 데이터 분석, 퍼널 개선, 연동 전략, 사기 대응을 통해 C2C 플랫폼의 성장과 신뢰 개선을 함께 만들었습니다.</p>
-            <ul class="bullet-list">
-              <li>결제 퍼널 분석과 세그먼트 전략을 통해 페이 결제액 2.4배 성장</li>
-              <li>카페–앱 연동으로 NRU 1.6배, 상품 등록 수 2배 증가</li>
-              <li>사기 채팅 키워드 적용으로 사기 피해 60% 감소</li>
-              <li>대시보드 구축과 모니터링 자동화로 운영 효율 개선</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item fade-up delay-2">
-            <div class="timeline-top">
-              <div>
-                <h3>브랜즈컴퍼니㈜ (전 스카이랩㈜)</h3>
-                <div class="role">팀장 · 마케팅기획</div>
-              </div>
-              <div class="date">2021.05 – 2022.01</div>
+          </div>
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <h3>중고나라</h3>
+              <span class="timeline-role">매니저 · 결제제휴사업팀</span>
+              <span class="timeline-date">2022.03 – 2024.04</span>
             </div>
-            <p class="timeline-desc">쿠팡 로켓배송 운영을 총괄하며 판매 데이터 분석, 발주 전략, 상품 라인업 확대를 통해 매출과 운영 안정성을 높였습니다.</p>
-            <ul class="bullet-list">
-              <li>월 평균 10% 이상 매출 성장</li>
-              <li>판매 데이터 기반 발주 전략 개선으로 재고 안정화</li>
-              <li>운영 상품 수 37% 증가를 통한 매출 볼륨 확대</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item fade-up delay-3">
-            <div class="timeline-top">
-              <div>
-                <h3>쿠팡</h3>
-                <div class="role">L4 · Pricing Operation</div>
-              </div>
-              <div class="date">2020.04 – 2020.08</div>
+            <div class="timeline-content">
+              <p>결제 서비스 운영과 데이터 분석, 퍼널 개선, 연동 전략, 사기 대응을 통해 C2C 플랫폼의 성장과 신뢰 개선을 함께 만들었습니다.</p>
+              <ul>
+                <li>결제 퍼널 분석과 세그먼트 전략을 통해 페이 결제액 2.4배 성장</li>
+                <li>카페–앱 연동으로 NRU 1.6배, 상품 등록 수 2배 증가</li>
+                <li>사기 채팅 키워드 적용으로 사기 피해 60% 감소</li>
+                <li>대시보드 구축과 모니터링 자동화로 운영 효율 개선</li>
+              </ul>
             </div>
-            <p class="timeline-desc">가격 정책과 예외 로직을 운영하며 이슈 상품의 가격 안정성과 대응 속도를 높이는 역할을 맡았습니다.</p>
-            <ul class="bullet-list">
-              <li>카테고리별 가격 정책 설정 및 이슈 관리</li>
-              <li>마스크 가격 로직 설계 및 예외 프로세스 정비</li>
-              <li>Pricing Tech 협업을 통한 운영 구조 개선</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item fade-up delay-3">
-            <div class="timeline-top">
-              <div>
-                <h3>위메프</h3>
-                <div class="role">사원 · 판촉운영팀</div>
-              </div>
-              <div class="date">2017.12 – 2020.03</div>
+          </div>
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <h3>브랜즈컴퍼니㈜</h3>
+              <span class="timeline-role">팀장 · 마케팅기획</span>
+              <span class="timeline-date">2021.05 – 2022.01</span>
             </div>
-            <p class="timeline-desc">가격 비교 채널 중심 판촉 전략을 운영하며 식품 카테고리의 거래액과 마진 효율을 개선했습니다.</p>
-            <ul class="bullet-list">
-              <li>TOP SKU 중심 판촉 전략으로 판촉 효율 개선</li>
-              <li>가격 비교 원부 프로젝트 수행으로 가격 비교 기능 구축</li>
-              <li>식품 카테고리 1등, GMV·CM 목표 달성</li>
-            </ul>
-          </article>
+            <div class="timeline-content">
+              <p>쿠팡 로켓배송 운영을 총괄하며 판매 데이터 분석, 발주 전략, 상품 라인업 확대를 통해 매출과 운영 안정성을 높였습니다.</p>
+              <ul>
+                <li>월 평균 10% 이상 매출 성장</li>
+                <li>판매 데이터 기반 발주 전략 개선으로 재고 안정화</li>
+                <li>운영 상품 수 37% 증가를 통한 매출 볼륨 확대</li>
+              </ul>
+            </div>
+          </div>
+           <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <h3>쿠팡</h3>
+              <span class="timeline-role">L4 · Pricing Operation</span>
+              <span class="timeline-date">2020.04 – 2020.08</span>
+            </div>
+            <div class="timeline-content">
+              <p>가격 정책과 예외 로직을 운영하며 이슈 상품의 가격 안정성과 대응 속도를 높이는 역할을 맡았습니다.</p>
+              <ul>
+                <li>카테고리별 가격 정책 설정 및 이슈 관리</li>
+                <li>마스크 가격 로직 설계 및 예외 프로세스 정비</li>
+                <li>Pricing Tech 협업을 통한 운영 구조 개선</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section fade-up" id="projects">
+    <!-- Projects Section (Gray BG) -->
+    <section class="section section-gray fade-up" id="projects">
       <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="section-kicker">Projects</span>
-            <h2 class="section-title">주요 프로젝트</h2>
-            <p class="section-sub">당근 스타일에 맞춰 커뮤니티, 신뢰, 운영 구조, 데이터 문제 해결이 잘 드러나는 프로젝트 중심으로 구성했습니다.</p>
-          </div>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card fade-up">
-            <div class="project-label"><span class="label-icon">📞</span> 운영 자동화</div>
-            <h3>예약 IVR 자동화 구축</h3>
-            <p class="project-summary">예약 담당자가 없는 시간대에도 안정적으로 예약을 받을 수 있도록 사람 중심 운영을 자동화 구조로 전환한 프로젝트입니다.</p>
-            <div class="project-meta">
-              <div>
-                <span class="meta-label">핵심 성과</span>
-                <strong>연간 운영비 약 2억 절감</strong>
-              </div>
-              <div>
-                <span class="meta-label">역할</span>
-                <strong>문제 정의 · 시나리오 설계 · 개발 협업</strong>
-              </div>
-            </div>
-            <div class="project-highlight">핵심 포인트: 운영 리스크가 큰 영역을 데이터로 식별하고 자동화로 전환해 24시간 대응 체계 구축</div>
-            <ul class="bullet-list">
-              <li>예약 담당자 운영 기여도 분석 결과 전체 결제액 비중 1% 미만 확인</li>
+        <h2 class="section-title">주요 프로젝트</h2>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-tag">운영 자동화</span>
+            <h3 class="card-title">예약 IVR 자동화 구축</h3>
+            <p class="card-desc">예약 담당자가 없는 시간대에도 안정적으로 예약을 받을 수 있도록 사람 중심 운영을 자동화 구조로 전환한 프로젝트입니다.</p>
+            <div class="card-highlight">연간 운영비 약 2억 절감</div>
+            <ul>
+              <li>예약 담당자 운영 기여도 분석 (전체 결제액 비중 1% 미만 확인)</li>
               <li>IVR 수락·거절 시나리오 설계 및 파일럿 테스트 진행</li>
               <li>예약 성공률 50% → 70% 개선</li>
             </ul>
-          </article>
-
-          <article class="project-card fade-up delay-1">
-            <div class="project-label"><span class="label-icon">💬</span> 퍼널 개선</div>
-            <h3>중고나라 페이 결제액 2.4배 성장</h3>
-            <p class="project-summary">결제 퍼널 전 구간을 분석해 병목이 큰 채팅 단계를 개선하고, 핵심 사용자 세그먼트를 관리해 결제 성장을 만든 프로젝트입니다.</p>
-            <div class="project-meta">
-              <div>
-                <span class="meta-label">핵심 성과</span>
-                <strong>결제액 2.4배 성장</strong>
-              </div>
-              <div>
-                <span class="meta-label">역할</span>
-                <strong>퍼널 분석 · 세그먼트 전략 · 정책 기획</strong>
-              </div>
-            </div>
-            <div class="project-highlight">핵심 포인트: 사용자 행동 데이터를 바탕으로 실제 이탈 구간을 찾아 기능 개선과 운영 정책으로 연결</div>
-            <ul class="bullet-list">
+          </div>
+          <div class="card">
+            <span class="card-tag">퍼널 개선</span>
+            <h3 class="card-title">페이 결제액 2.4배 성장</h3>
+            <p class="card-desc">결제 퍼널 전 구간을 분석해 병목이 큰 채팅 단계를 개선하고, 핵심 사용자 세그먼트를 관리해 결제 성장을 만든 프로젝트입니다.</p>
+            <div class="card-highlight">결제액 2.4배 성장 달성</div>
+            <ul>
               <li>채팅 단계 이탈률 분석으로 핵심 병목 확인</li>
               <li>카페 게시글 자동 댓글 기능으로 앱 채팅 유입 구조 개선</li>
               <li>상위 거래자 거래액 약 20% 증가</li>
             </ul>
-          </article>
-
-          <article class="project-card fade-up delay-2">
-            <div class="project-label"><span class="label-icon">🏘</span> 커뮤니티 활성화</div>
-            <h3>카페–앱 연동 전략 구축</h3>
-            <p class="project-summary">네이버 카페 회원을 앱 사용자로 전환해 커뮤니티 활성화와 상품 등록 성장을 함께 만든 프로젝트입니다.</p>
-            <div class="project-meta">
-              <div>
-                <span class="meta-label">핵심 성과</span>
-                <strong>회원 수 1.6배 증가</strong>
-              </div>
-              <div>
-                <span class="meta-label">역할</span>
-                <strong>연동 기획 · 이벤트 설계 · 데이터 검증</strong>
-              </div>
-            </div>
-            <div class="project-highlight">핵심 포인트: 유저 유입 → 활동 → 거래로 이어지는 구조를 설계해 커뮤니티 활성화와 거래 성장 동시 달성</div>
-            <ul class="bullet-list">
+          </div>
+          <div class="card">
+            <span class="card-tag">커뮤니티 활성화</span>
+            <h3 class="card-title">카페–앱 연동 전략 구축</h3>
+            <p class="card-desc">네이버 카페 회원을 앱 사용자로 전환해 커뮤니티 활성화와 상품 등록 성장을 함께 만든 프로젝트입니다.</p>
+            <div class="card-highlight">회원 수 1.6배 증가</div>
+            <ul>
               <li>연동 신청 프로세스 자동화 및 단계별 이벤트 설계</li>
               <li>상품 등록 수 2배 증가</li>
               <li>연동 회원 활동 지표가 일반 회원 대비 약 20% 높게 발생</li>
             </ul>
-          </article>
-
-          <article class="project-card fade-up delay-3">
-            <div class="project-label"><span class="label-icon">🛡</span> 신뢰 · 안전</div>
-            <h3>채팅 데이터 기반 사기 탐지 시스템 개선</h3>
-            <p class="project-summary">사기 피해가 집중되는 구간을 찾아 채팅 데이터를 기반으로 모니터링 키워드 체계를 고도화한 프로젝트입니다.</p>
-            <div class="project-meta">
-              <div>
-                <span class="meta-label">핵심 성과</span>
-                <strong>사기 피해 60% 감소</strong>
-              </div>
-              <div>
-                <span class="meta-label">역할</span>
-                <strong>사기 패턴 분석 · 키워드 설계 · 운영 개선</strong>
-              </div>
-            </div>
-            <div class="project-highlight">핵심 포인트: 사용자 신뢰를 해치는 패턴을 데이터로 발견하고 사전 예방 구조로 전환</div>
-            <ul class="bullet-list">
-              <li>사기의 90% 이상이 채팅에서 발생한다는 점 확인</li>
+          </div>
+          <div class="card">
+            <span class="card-tag">신뢰 · 안전</span>
+            <h3 class="card-title">사기 탐지 시스템 개선</h3>
+            <p class="card-desc">사기 피해가 집중되는 구간을 찾아 채팅 데이터를 기반으로 모니터링 키워드 체계를 고도화한 프로젝트입니다.</p>
+            <div class="card-highlight">사기 피해 60% 감소</div>
+            <ul>
+              <li>사기의 90% 이상이 채팅에서 발생한다는 점 데이터로 확인</li>
               <li>사기 키워드 도출 및 단계적 테스트로 모니터링 정확도 개선</li>
               <li>머신러닝 기반 사기 감지 시스템 도입 기반 마련</li>
             </ul>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Capability & Education (White BG) -->
     <section class="section fade-up" id="capability">
       <div class="wrap">
-        <div class="section-head">
+        <div class="two-col">
           <div>
-            <span class="section-kicker">Capability</span>
             <h2 class="section-title">핵심 역량</h2>
+            <div class="tags-container">
+              <h4>Operations / Community</h4>
+              <div class="tags">
+                <span>Operations Improvement</span>
+                <span>Policy & SOP</span>
+                <span>Community Trust</span>
+                <span>VOC Analysis</span>
+                <span>Process Automation</span>
+                <span>Cross-functional Collaboration</span>
+              </div>
+              <h4 style="margin-top:24px;">Data / Tools</h4>
+              <div class="tags">
+                <span>SQL</span>
+                <span>Amazon Redshift</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>QuickSight</span>
+                <span>Looker Studio</span>
+                <span>GA4</span>
+                <span>AppsFlyer</span>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card fade-up delay-1">
-            <h3>Operations / Community</h3>
-            <div class="chips">
-              <span class="chip">Operations Improvement</span>
-              <span class="chip">Policy & SOP</span>
-              <span class="chip">Community Trust</span>
-              <span class="chip">VOC Analysis</span>
-              <span class="chip">Process Automation</span>
-              <span class="chip">Cross-functional Collaboration</span>
-            </div>
-          </article>
-
-          <article class="skill-card fade-up delay-2">
-            <h3>Data / Tools</h3>
-            <div class="chips">
-              <span class="chip">SQL</span>
-              <span class="chip">Amazon Redshift</span>
-              <span class="chip">MySQL</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">QuickSight</span>
-              <span class="chip">Looker Studio</span>
-              <span class="chip">Superset</span>
-              <span class="chip">GA4</span>
-              <span class="chip">AppsFlyer</span>
-              <span class="chip">Airbridge</span>
-              <span class="chip">Spreadsheet</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section fade-up" id="education">
-      <div class="wrap">
-        <div class="section-head">
           <div>
-            <span class="section-kicker">Education</span>
             <h2 class="section-title">학력 및 교육</h2>
-            <p class="section-sub">비즈니스 이해와 데이터·개발 협업 역량을 함께 쌓아온 이력입니다.</p>
+            <div class="edu-list">
+              <div class="edu-item">
+                <span class="edu-type">학사</span>
+                <h4>상명대학교(천안) 금융경영학과</h4>
+                <p>2010.03 – 2016.08</p>
+              </div>
+              <div class="edu-item">
+                <span class="edu-type">수료</span>
+                <h4>Codeit 파이썬 기반 빅데이터 분석</h4>
+                <p>2025.02 – 2025.03</p>
+              </div>
+              <div class="edu-item">
+                <span class="edu-type">수료</span>
+                <h4>Code States 풀스택 엔지니어링</h4>
+                <p>2020.12 – 2021.04</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="edu-grid">
-          <article class="edu-card fade-up delay-1">
-            <span class="edu-type">학력</span>
-            <h3>상명대학교(천안)</h3>
-            <p>금융경영학과 · 학사<br />2010.03 – 2016.08</p>
-          </article>
-
-          <article class="edu-card fade-up delay-2">
-            <span class="edu-type">교육</span>
-            <h3>Code States</h3>
-            <p>Software Engineering Full-Stack 과정 수료<br />2020.12 – 2021.04</p>
-          </article>
-
-          <article class="edu-card fade-up delay-3">
-            <span class="edu-type">교육</span>
-            <h3>Codeit</h3>
-            <p>Python 기반 빅데이터 분석 실습 과정 수료<br />2025.02 – 2025.03</p>
-          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">© 하윤택 · Danggeun-Inspired Operations Portfolio</div>
+    <div class="wrap">
+      <div class="footer-top">
+        <span class="footer-logo">당근 스타일 포트폴리오</span>
+        <div class="footer-contact">
+          <strong>하윤택</strong><br>
+          yuntaek.ha@gmail.com<br>
+          010-4795-3330
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © Yuntaek Ha. Inspired by Daangn Design System.
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
